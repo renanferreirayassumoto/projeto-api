@@ -1,17 +1,22 @@
 <template>
   <v-app>
-    <Header />
+    <v-main>
+      <Header />
+      <Home />
+    </v-main>
   </v-app>
 </template>
 
 <script>
 import Header from './components/Header.vue';
+import Home from '../src/pages/Home.vue'
 
 export default {
   name: 'App',
 
   components: {
-    Header
+    Header,
+    Home
   },
 
   data: () => ({
